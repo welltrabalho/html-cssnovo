@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexible box well </title>
-    <STyle>
-       div.container {
-        background-color: blueviolet;
-
-        display: flex;
-
+    <title>flexbox centralizado </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        div.item {
+
+        body{
+            background-color: lightsalmon;
+        }
+
+        main{
+            background-color: lightgreen;
+            height: 90vh;
+            width: 90vw;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section{
             background-color: lightseagreen;
-            border: 1px solid black;
-
-            flex: auto;
-            text-align: ;
-        
+            height: 200px;
+            width: 200px;
         }
-    </STyle>
+
+
+    </style>
 </head>
 <body>
-    <div>
-        <h1>flexible box</h1>
-        <div class="container">
-            <div class="item">A</div>
-            <div class="item">B</div>
-            <div class="item">C</div>
-            <div class="item">D</div>
-            <div class="item">E</div>
-            <div class="item">F</div>
-            <div class="item">G</div>
-        </div>
-    </div>
+    <main>
+        <section>
+            <h1> Tela de Login</h1>
+        </section>
+    </main>
 </body>
 </html>
