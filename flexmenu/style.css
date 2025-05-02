@@ -21,12 +21,12 @@ header {
   padding: 10px;
 }
 
-header h1 {
-  border: 1px dotted ;
+header > h1 {
+  border: 1px dotted black;
 }
 
-header nav {
-    border: 1px dotted rgba(0, 0, 0, 0.336);   
+header > nav {
+    border: 2px dotted black ;   
 }
   
 main { 
