@@ -11,9 +11,16 @@ body {
   color: #333;
 }
 
-p, h1, h2 {
+p {
     margin-bottom: 10px;
     text-align: justify;
+}
+
+hi, h2 {
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: center;
+    color: #333;
 }
 
 header, section.normal {
@@ -22,4 +29,57 @@ header, section.normal {
 section.flex-content{
     padding: 20px;
     background-color: rgb(156, 156, 156);
+
+    display: flex;
+    flex-flow: column nowrap;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+article.text-media{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+article.media-text{
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+  
+} 
+
+article > div.text {
+  flex: 1 1 300px;
+  padding: 10px;
+  
+  border-radius: 10px;
+
+ 
+  
+}
+
+article > div.media {
+  flex: 1 0 380px;
+
+
+  
+}
+
+div.media > img {
+  display: block;
+  margin: auto;
+  width: auto;
+  padding: 20px;
+}
+
+div.media > iframe {
+  display: block;
+  margin: auto;
+  width: 90%;
+  
+}
+
