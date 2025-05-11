@@ -71,6 +71,9 @@ section {
 }
 
 article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100px;
     border-radius: 4px;
     margin-right:10px;
