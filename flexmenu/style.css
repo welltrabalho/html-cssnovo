@@ -24,15 +24,17 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 header > h1 {
-  border: 1px dotted black;
+  
   flex: 0 0 200px;
+  justify-content: start;
 }
 
 header > nav {
-    border: 2px dotted black ;  
+    
     
     display: flex;
     flex-flow: row wrap;
@@ -40,13 +42,14 @@ header > nav {
 }
 
 header > nav > a {
+    
     background-color: black;
     color: white;
     padding: 10px;
     margin: 5px;
     text-decoration: none;
     text-align:center;
-    border-radius: 10px;
+    border-radius: 15px;
 
 }  
 
@@ -56,7 +59,7 @@ header > nav > a:hover {
     border: 2px solid black;
     text-align: center;
     transition: background-color.5s;
-}
+}       
   
 main { 
  background-color: white;
@@ -64,4 +67,40 @@ main {
  padding: 10px;
  border-radius: 15px;
  box-shadow: 2px 2px 3px black;
+}
+
+#menu {
+  display: none; /* Oculta o menu inicialmente */
+}
+
+#menu.show {
+  display: flex; /* Exibe o menu quando a classe 'show' é adicionada */
+  flex-direction: column; /* Ajusta o layout para dispositivos móveis */
+}
+
+
+/* Oculta o menu e exibe o ícone de hambúrguer em telas pequenas */
+#menu {
+    display: none; /* Oculta o menu inicialmente */
+}
+
+#menu.show {
+    display: flex; /* Exibe o menu quando a classe 'show' é adicionada */
+    flex-direction: column; /* Ajusta o layout para dispositivos móveis */
+}
+
+#menu-icon {
+    display: block; /* Exibe o ícone de hambúrguer por padrão */
+}
+
+/* Em telas grandes, exibe o menu normalmente e oculta o ícone de hambúrguer */
+@media screen and (min-width: 581px) {
+    #menu {
+        display: flex; /* Exibe o menu */
+        flex-direction: row; /* Layout horizontal */
+    }
+
+    #menu-icon {
+        display: none; /* Oculta o ícone de hambúrguer */
+    }
 }

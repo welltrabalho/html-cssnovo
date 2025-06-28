@@ -1,0 +1,23 @@
+@charset "UTF8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header >h1{
+
+    flex-basis: 50px;
+}
+
+header > nav > a {
+    width: 90vw;
+}
+
+#menu {
+    display: none; /* Oculta o menu inicialmente */
+}
+
+#menu.show {
+    display: flex; /* Exibe o menu quando a classe 'show' é adicionada */
+    flex-direction: column; /* Ajusta o layout para dispositivos móveis */
+}
